@@ -21,7 +21,14 @@ class Cube:
             (4,5), (5,6), (6,7), (7,4),  # Top square
             (0,4), (1,5), (2,6), (3,7)   # Vertical edges
         ]
-    
+        self.faces = [
+            (0, 1, 2, 3),  # Front face
+            (4, 5, 6, 7),  # Back face
+            (0, 1, 5, 4),  # Bottom face
+            (2, 3, 7, 6),  # Top face
+            (0, 3, 7, 4),  # Left face
+            (1, 2, 6, 5),  # Right face
+        ]
     def rotate(self, rotation_matrix):
         """Apply rotation to all vertices."""
         self.vertices = np.dot(self.vertices, rotation_matrix)
