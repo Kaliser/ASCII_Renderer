@@ -1,7 +1,7 @@
 A simple terminal-based 3D renderer that displays various 3D shapes using ASCII characters. The program supports both wireframe and solid rendering modes and allows switching between different shapes.
 
 ## Features
-- **Renders 3D Shapes**: Cube, Pyramid, Tetrahedron, Octahedron, Sphere, Donut, and Figure-8.
+- **Renders 3D Shapes**: Cube, Pyramid, Tetrahedron, Octahedron, Sphere, and Donut.
 - **Projection Methods**: Orthographic and Perspective.
 - **Rendering Modes**: Wireframe and Solid (with shading).
 - **Screensaver Mode**: Cycles through different shapes automatically.
@@ -22,10 +22,10 @@ python main.py [options]
 ### Command-line Arguments:
 | Argument       | Description                                         | Default |
 |---------------|-----------------------------------------------------|---------|
-| `--shape`     | Shape to render (`cube`, `donut`, `figure8`, `pyramid`, `sphere`, `tetrahedron`, `octahedron`). | `cube` |
+| `--shape`     | Shape to render (`cube`, `donut`, `pyramid`, `sphere`, `tetrahedron`, `octahedron`). | `cube` |
 | `--fps`       | Frames per second.                                 | `30`    |
 | `--projection` | Projection method (`o` for orthographic, `p` for perspective). | `p` |
-| `--mode`      | Rendering mode (`wireframe` or `solid`).           | `wireframe` |
+| `--mode`      | Rendering mode (`wireframe` or `solid` (`solid` currently only supported for cubes)).            | `wireframe` |
 | `--screensaver` | Enable screensaver mode to cycle through different shapes. | `False` |
 
 ### Example Commands:
